@@ -5,10 +5,6 @@ class Index extends Base
 {
     public function index()
     {
-        echo "index";
-        $this->base();
-        $this->comm();
-
-        return view('index');
+        return $this->fetch('index');
     }
 }
